@@ -1,0 +1,171 @@
+/* Site Header */
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo{
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
+}
+
+.logo__img{
+  display: block;
+}
+
+/* Sitenav */
+.sitenav__container{
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.sitenav__list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.sitenav__item + .sitenav__item{
+  margin-left: 30px;
+}
+
+.sitenav__link{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  transition: opacity 0.3s ease;
+}
+
+.sitenav__link:hover{
+  opacity: 0.8;
+}
+
+.sitenav__link:active{
+  opacity: 0.6;
+}
+
+.sitenav__button{
+  display: block;
+  padding: 5px 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  transition: opacity 0.3s ease;
+}
+
+.sitenav__button:hover{
+  opacity: 0.8;
+}
+
+.sitenav__button:active{
+  opacity: 0.6;
+}
+
+/* Hero Section */
+.hero{
+  background-color: #FBFBFB;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hero__container{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero__heading{
+  color: #000000;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  max-width: 749px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Space Mono';
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4A5568;
+}
+
+.hero__text::after{
+  display: block;
+  content: "";
+  width: 45px;
+  height: 43px;
+  margin-left: 10px;
+  background-image: url("/static/images/coffee.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.hero__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__item + .hero__item{
+  margin-left: 20px;
+}
+
+.hero__tags{
+  padding: 3px 6px;
+  margin: 0;
+  font-family: 'Space Mono';
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.hero__tags--blue{
+  background-color: #1874FD;
+}
+
+.hero__tags--orange{
+  background-color: #FDB601;
+}
+
+.hero__tags--green{
+  background-color: #D0B673;
+}
+
+.hero__tags--black{
+  background-color: #2E1D1D;
+}
