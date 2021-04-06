@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/styles/styles.css">
+  <link rel="stylesheet" href="./static/styles/general.css">
+  <title>Typestory</title>
+</head>
+<body>
+  
+  <!-- Site Header -->
+  <header class="site-header">
+    <nav class="sitenav">
+      <div class="container sitenav__container">
+        <a class="logo" href="/">
+          <img class="logo__img" src="./static/images/typestory_logo.svg" alt="Typestory Logo" width="104" height="24">
+        </a>
+        
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="/">Home</a>
+          </li>
+          
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="/articles">Articles</a>
+          </li>
+        </ul>
+        
+        <a class="sitenav__button" href="/create">Write a story</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Create Section -->
+    <section class="create">
+      <div class="container"> 
+        <form class="create__form" action="/create" method="POST">
+          
+          <textarea class="create__title-textarea" name="title" id="title-textarea"  placeholder="Title" autocomplete="off" autofocus></textarea>
+          
+          <textarea class="create__story-textarea" name="story" id="story-textarea"  placeholder="Tell your story..." autocomplete="off" autofocus></textarea>
+          
+          <div class="create__form-wrapper">
+            <input class="create__author-input" id="author-input" type="text" name="author" placeholder="Your name" autocomplete="off">
+          
+            <button class="create__button">Publish</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <p class="site-footer__text">“This web application was created to fulfill <b>Web Technology</b> module’s requirements and does not represent an actual company or service”.</p>
+    </div>
+  </footer>
+  
+  
+  <script src="./static/javascript/create.js"></script>
+</body>
+</html>
