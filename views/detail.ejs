@@ -38,29 +38,25 @@
   
   <!-- Main Content -->
   <main class="main-content">
-    
-    <!-- Create Section -->
-    <section class="create">
-      <div class="container create__container">
+    <section class="detail">
+      <div class="container detail__container">
+        <img class="detail__img" src="./static/images/detail.png" alt="" width="973" height="248">
         
-        <% if (error != null) { %>
-          <p class="create__error">Please fill all the required files</p>
-        <% } %>
-        
-        <form class="create__form" action="/create" method="POST">
-          <textarea class="create__title-textarea" name="title" id="title-textarea"  placeholder="Title" autocomplete="off" autofocus></textarea>
-          
-          <textarea class="create__story-textarea" name="desc" id="story-textarea"  placeholder="Tell your story..." autocomplete="off" autofocus></textarea>
-          
-          <div class="create__form-wrapper">
-            <input class="create__author-input" id="author-input" type="text" name="author" placeholder="Your name" autocomplete="off">
+        <div class="detail__wrapper">
+          <div class="detail__wrapper-top">
+            <h2 class="detail__title"><%=post.title %></h2>
             
-            <button class="create__button">Publish</button>
+            <div class="detail__info">
+              <p class="detail__author"><%=post.author %></p>
+              <p class="detail__date"><%=post.date %></p>
+            </div>
           </div>
-        </form>
+
+          <p class="detail__text"><%=post.desc %></p>
+        </div>
+        
       </div>
     </section>
-    
   </main>
   
   <!-- Footer -->
@@ -71,6 +67,6 @@
   </footer>
   
   
-  <script src="./static/javascript/create.js"></script>
+  
 </body>
 </html>

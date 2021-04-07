@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./static/styles/styles.css">
   <link rel="stylesheet" href="./static/styles/general.css">
+  <link rel="stylesheet" href="./static/styles/styles.css">
   <title>Typestory</title>
 </head>
 <body>
@@ -45,37 +45,37 @@
         <h1 class="articles__heading">All stories</h1>
         
         <ul class="articles__list">
-
-          <% for(let article of articles){ %>
-
-          <li class="articles__item">
-            <a class="articles__link" href="">
-              <h2 class="articles__title"><%=article.title %></h2>
-              
-              <div class="articles__wrapper">
-                <p class="articles__date"><%=article.date %></p>
-                <p class="articles__author"><%=article.author %></p>
-              </div>
-            </a>
-
-            <a class="articles__delete" href="#">Delete</a>
-          </li>
           
-          <% } %>
-        </ul>
-      </div>
-    </section>
+          <% for(let article of articles){ %>
+            
+            <li class="articles__item">
+              <a class="articles__link" href="<%=article.id %>">
+                <h2 class="articles__title"><%=article.title %></h2>
+                
+                <div class="articles__wrapper">
+                  <p class="articles__date"><%=article.date %></p>
+                  <p class="articles__author"><%=article.author %></p>
+                </div>
+              </a>
+              
+              <a class="articles__delete" href="#">Delete</a>
+            </li>
+            
+            <% } %>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
     
-  </main>
-  
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container site-footer__container">
-      <p class="site-footer__text">“This web application was created to fulfill <b>Web Technology</b> module’s requirements and does not represent an actual company or service”.</p>
-    </div>
-  </footer>
-  
-  
-  
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container site-footer__container">
+        <p class="site-footer__text">“This web application was created to fulfill <b>Web Technology</b> module’s requirements and does not represent an actual company or service”.</p>
+      </div>
+    </footer>
+    
+    
+    
+  </body>
+  </html>

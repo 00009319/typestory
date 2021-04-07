@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./static/styles/styles.css">
   <link rel="stylesheet" href="./static/styles/general.css">
+  <link rel="stylesheet" href="./static/styles/styles.css">
   <title>Typestory</title>
 </head>
 <body>
@@ -71,80 +71,23 @@
         <h2 class="visually-hidden">Posts Section</h2>
         
         <ul class="posts__list">
+
+          <% for(let article of articles){ %>
           <li class="posts__item">
             <img class="posts__img" src="./static/images/post.png" alt="Posts Photo" width="297" height="179">
             
             <div class="posts__body">
-              <a class="posts__link posts__heading" href="">long established</a>
-              <p class="posts__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+              <a class="posts__link posts__heading" href="<%=article.id %>"><%=article.title %></a>
+              <p class="posts__description"><%=article.desc %></p>
               
               <div class="posts__footer">
-                <p class="posts__author">Jakhongir Sagdullaev</p>
-                <a class="posts__read-more" href="">Read more</a>
+                <p class="posts__author"><%=article.author %></p>
+                <a class="posts__read-more" href="<%=article.id %>">Read more</a>
               </div>
             </div>
-            
           </li>
-          
-          <li class="posts__item">
-            <img class="posts__img" src="./static/images/post.png" alt="Posts Photo" width="297" height="179">
-            
-            <div class="posts__body">
-              <a class="posts__link posts__heading" href="">long established</a>
-              <p class="posts__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-              
-              <div class="posts__footer">
-                <p class="posts__author">Jakhongir Sagdullaev</p>
-                <a class="posts__read-more" href="">Read more</a>
-              </div>
-            </div>
-            
-          </li>
-          
-          <li class="posts__item">
-            <img class="posts__img" src="./static/images/post.png" alt="Posts Photo" width="297" height="179">
-            
-            <div class="posts__body">
-              <a class="posts__link posts__heading" href="">long established</a>
-              <p class="posts__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-              
-              <div class="posts__footer">
-                <p class="posts__author">Jakhongir Sagdullaev</p>
-                <a class="posts__read-more" href="">Read more</a>
-              </div>
-            </div>
-            
-          </li>
-          
-          <li class="posts__item">
-            <img class="posts__img" src="./static/images/post.png" alt="Posts Photo" width="297" height="179">
-            
-            <div class="posts__body">
-              <a class="posts__link posts__heading" href="">long established</a>
-              <p class="posts__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-              
-              <div class="posts__footer">
-                <p class="posts__author">Jakhongir Sagdullaev</p>
-                <a class="posts__read-more" href="">Read more</a>
-              </div>
-            </div>
-            
-          </li>
-          
-          <li class="posts__item">
-            <img class="posts__img" src="./static/images/post.png" alt="Posts Photo" width="297" height="179">
-            
-            <div class="posts__body">
-              <a class="posts__link posts__heading" href="">long established</a>
-              <p class="posts__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-              
-              <div class="posts__footer">
-                <p class="posts__author">Jakhongir Sagdullaev</p>
-                <a class="posts__read-more" href="">Read more</a>
-              </div>
-            </div>
-            
-          </li>
+          <% } %>
+
         </ul>
       </div>
     </section>
