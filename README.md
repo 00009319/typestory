@@ -29,3 +29,6 @@ npm run dev
 ### Web application repository on GitHub
 [link to GitHub repo](https://github.com/00009319/typestory.git)
 
+### Web application repository on Glitch
+[link to Glitch](https://typestory.glitch.me/)
+
