@@ -73,6 +73,19 @@ app.post('/create', async(req, res) => {
   }
 });
 
+/* Rest API */
+app.get('/api/v1/articles', (req, res) => {
+  read(filePath, (err, data) => {
+    if(err) throw err
+
+    const articles = JSON.parse(data)
+
+    res.json(articles)
+  })
+
+});
+
+
 //Articles Page
 app.get('/articles', (req, res) => {
   read(filePath, (err, data) => {

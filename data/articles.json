@@ -1,29 +1,8 @@
 [
     {
-        "id": "6caaa007-8564-4aa3-97b5-b94eea2ba360",
-        "title": "sdasd",
-        "desc": "asdasd",
-        "author": "zxczxc",
-        "date": "2021/4/7"
-    },
-    {
-        "id": "084b698f-ec1c-4ffb-ad13-3b463d5f53be",
-        "title": "sadsa",
-        "desc": "asdasd",
-        "author": "sad",
-        "date": "2021/4/7"
-    },
-    {
-        "id": "88f3e846-1cad-4d25-a043-83bd8480e123",
-        "title": "hadsbjsahfbadsljfbhjadsfbkl",
-        "desc": "<%=article.id %>sadkalsjbdkasjllashbfhsdbflsdbvlnbsdnkvbsdamkvn;adfvnifdsv",
-        "author": "Jonibek",
-        "date": "2021/4/7"
-    },
-    {
-        "id": "0fc134b3-c79a-442a-bd80-53d8fc3c500d",
-        "title": "JavaScript",
-        "desc": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+        "id": "c6f216e7-5e4a-4e7f-9a92-679b7b8049aa",
+        "title": "5 Principles to Become a Better Developer",
+        "desc": "If you are a self-taught developer like me, then chances are you learned everything about being a developer online — whether it was through Bootcamp, Google, Stack Overflow, Udemy, or any other online platform that offers cheap or even free courses and resources.\r\nHowever, you can never become as good a developer as you want to be if you don’t understand the concepts, fundamentals, and ways of thinking that are taught only in an academic setting.\r\nAside from the diploma and credentials, this is probably the only difference between self-taught developers and computer science graduates. It makes all the difference, though — not just the title itself but also in regard to confidence and growth. As such, it is important for self-taught developers to not just learn the technical side of things but also the principles, the techniques, and the perspectives because if you want to become a real developer, then you need to start thinking like a real developer.\r\n\r\nBefore You Start Coding, Keep in Mind That Computers Are Dumb\r\nAt the end of the day, they are just tools.\r\nAs you learn to program, you will realize that computers are dumb. You need to tell them everything that you want to happen, step by step, detail by detail, word for word.\r\nSo before you start coding, imagine this conversation:\r\nA person approaches you and asks, “Do you know where 221B Baker Street is?”\r\nYou answer with these directions: “Go to that street and turn right, and as soon as you reach the second traffic light, you have to go left. Once you see a cafe with a green door, there’s a small shortcut in there. Take it, and at the end of that road, you will see 221B Baker Street.”\r\nThe person just stares at you and says, “I was just asking if you know where it is. I didn’t ask for directions — just a yes or no.”\r\nThis was just some silly example I came up with. The takeaway is that you need to always be aware as you code that computers are dumb. They will follow everything you write, all the instructions, word for word, so make sure that all your logic makes sense and the structure is correct.",
         "author": "Jakhongir",
         "date": "2021/4/7"
     }
